@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('description');
             $table->string('type');
             $table->boolean('disponible')->default(true);
+            $table->string('ref')->default('app'. uniqid());
         });
     }
 

@@ -19,6 +19,7 @@ return new class extends Migration
 
             $table->bigInteger('user_id')->unsigned();
             $table->bigInteger('montant')->unsigned();
+            $table->string('ref')->default('wal'. uniqid());
         });
     }
 

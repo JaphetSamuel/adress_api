@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Room extends Model
 {
+    protected $fillable =['nom','updated_at','created_at'];
     use HasFactory;
 }

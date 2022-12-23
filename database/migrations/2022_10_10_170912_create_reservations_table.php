@@ -26,6 +26,7 @@ return new class extends Migration
             $table->dateTime("date_debut")->nullable();
             $table->dateTime("date_fin")->nullable();
             $table->integer("note")->unsigned();
+            $table->string('ref')->default('res'. uniqid());
         });
     }
 

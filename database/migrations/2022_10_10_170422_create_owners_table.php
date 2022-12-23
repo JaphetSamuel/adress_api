@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('telephone');
             $table->bigInteger('user_id')->unsigned();
+            $table->string('ref')->default('user'. uniqid());
         });
     }
 

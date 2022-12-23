@@ -1,0 +1,20 @@
+@import '../../vendor/filament/filament/resources/css/app.css';
+
+.filament-sidebar-nav {
+    @apply bg-red-500 text-white
+}
+
+.filament-sidebar-item > a:hover {
+    @apply bg-white text-red-600
+}
+.filament-sidebar-item-active > a {
+    @apply bg-white text-red-600
+}
+
+.filament-sidebar-header{
+    @apply bg-red-500 text-white
+}
+
+.filament-sidebar-group > p {
+    @apply text-white
+}
